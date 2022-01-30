@@ -2,16 +2,16 @@ import numpy as np
 import pandas as pd
 
 # Loading Data from a CSV File
-data = pd.DataFrame(data=pd.read_csv('trainingdata.csv'))
+data = pd.read_csv('trainingdata.csv')
 print(data)
 
 # Separating concept features from Target
-concepts = np.array(data.iloc[:,0:-1])
+concepts = np.array(data)[:,0:-1]
 print(concepts)
 
 # Isolating target into a separate DataFrame
 # copying last column to target array
-target = np.array(data.iloc[:,-1])
+target = np.array(data)[:,-1]
 print(target)
 
 def learn(concepts, target):
