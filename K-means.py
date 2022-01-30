@@ -7,7 +7,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-dataset=load_iris()
+dataset=load_iris() 
+#dataset = pd.read_csv('iris.csv') DO THIS IN LAB instead of previous line
 # print(dataset)
 
 X=pd.DataFrame(dataset.data)
